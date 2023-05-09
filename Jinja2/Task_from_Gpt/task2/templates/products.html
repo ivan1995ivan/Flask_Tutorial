@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Список продуктов</title>
+</head>
+<body>
+    <h1>Список продуктов</h1>
+    <ul>
+        {% for product in products %}
+        <li>
+            <h3>{{ product.name }}</h3>
+            <p>Цена: {{ product.price }}</p>
+            <p>{{ product.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
