@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     name = "John"
-    age = 25
+    age = 17
     city = "New York"
     return render_template('variables.html', name=name, age=age, city=city)
 
