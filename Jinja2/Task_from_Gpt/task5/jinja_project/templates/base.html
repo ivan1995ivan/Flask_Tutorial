@@ -6,14 +6,7 @@
     <header>
         <h1>Мой проект Jinja2</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href='/'>Главная</a></li>
-            <li><a href="/about">О проекте</a></li>
-            <li><a href="/products">Продукты</a></li>
-            <li><a href="/contact">Контакты</a></li>
-        </ul>
-    </nav>
+    {% include 'nav.html' %}
     <main>
         {% block content %}{% endblock %}
     </main>
